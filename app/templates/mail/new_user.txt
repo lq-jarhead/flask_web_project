@@ -1,0 +1,2 @@
+Welcome {{ user }}!
+Click {{ url_for('main.confirm',token=token,_external=True)}} to confirm.

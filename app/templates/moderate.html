@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}Flasky - Comment Moderation{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>Comment Moderation</h1>
+</div>
+{% set moderate=True%}
+{% include '_comments.html' %}
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, '.moderate') }}
+</div>
+{% endif %}
+{% endblock %}
+{# 和其他模板文件比较起来，这个作用比较单一，而且涉及到是否显示"moderate"按钮的方法是在view.py
+	视图函数中设置11/16/2017#}
