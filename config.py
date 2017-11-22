@@ -11,8 +11,7 @@ class Config:
     MAIL_PORT=465#25有错，465或者587,注意并不是app.config["MAIL_PORT"]=...
     MAIL_USE_SSL= True
     MAIL_USERNAME="1622571327@qq.com" or os.environ.get("MAIL_USERNAME")
-    MAIL_PASSWORD="bwnuapgyljkebgei"or os.environ.get("MAIL_PASSWORD")
-
+    MAIL_PASSWORD= os.environ.get("MAIL_PASSWORD")
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'Flasky Admin <1622571327@qq.com>'
     FLASKY_ADMIN = "1622571327@qq.com"
