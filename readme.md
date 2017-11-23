@@ -100,3 +100,5 @@ with-python#introduction")
 个人web部署成功了，使用的方法和官网介绍有一定的不同。结合他人的经历，和自己的尝试，亲测上述方法可行。
 
 1. 再次部署时，发现在浏览器无法登陆heroku官网，需要结合翻墙软件，告一段落  11/23/2017 1:03:08 PM 
+2. 可以将我的项目clone到本地，主要看.Profile和config.py 文件，前者是heroku平台运行的文件提示，后者是我们是我们的配置文件，至于其中PASSWORD的设置，主要是后期注册的时候，会自动发送邮件给用户。若是需要，可在heroku客户端运行 'herohu config:set MAIL_PASSWORD='<SMTP开启的密码>' '即可，最后利用'git push heroku master'即可，heroku自行将其上传到云端。11/23
+3. 
