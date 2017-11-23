@@ -1,4 +1,4 @@
-#Heroku云部署：将Python web应用部署在heroku中-详细步骤
+#Heroku云部署：将Python web应用部署在heroku中-详细步骤#
 前言：本教程基于《Flask web开发：基于python的web应用开发实战》一书、网上部分教程和自己部署经历汇总而来。需要说明的是，《Flask web开发》一书中关于heroku云部署一章有有诸多问题，而且heroku平台也不断更新，导致部署代码有许多不同。以下代码为实际操作，排除多种报错，直至成功部署。
 
 heroku官方部署教程见 [链接](链接 "https://devcenter.heroku.com/articles/getting-started-
